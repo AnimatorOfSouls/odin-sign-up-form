@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <img src="./assets/sun.svg" alt="A sun icon">
+      <h1>Light Up</h1>
+    </div>
+    <p>
+      Photo by <a href="https://unsplash.com/es/@maksym_tymchyk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maksym Tymchyk 🇺🇦</a> on <a href="https://unsplash.com/t/textures-patterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </p>
+  </div>
+  <div class="main">
+    <p class="info">
+      Want to become one with the sun? Sign up today to gain (literal) enlightenment!
+      <br>
+      <em>Disclaimer: May cause unwanted side effects</em>
+    </p>
+    <form action="" id="sign-up">
+      <p>Information for the Sun God</p>
+      <ul>
+        <li>
+          <label for="fname">FIRST NAME</label>
+          <input type="text" name="fname" id="fname">
+        </li>
+        <li>
+          <label for="lname">LAST NAME</label>
+          <input type="text" name="lname" id="lname">
+        </li>
+        <li>
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email">
+        </li>
+        <li>
+          <label for="phone-num">PHONE NUMBER</label>
+          <input type="tel" name="phone-num" id="phone-num">
+        </li>
+        <li>
+          <label for="password">PASSWORD</label>
+          <input type="text" name="password" id="password" class="error">
+        </li>
+        <li>
+          <label for="password-c">CONFIRM PASSWORD</label>
+          <input type="text" name="password-c" id="password-c" class="error">
+        </li>
+      </ul>
+    </form>
+    <div class="footer">
+      <button type="submit" form="sign-up">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Bosk";
+  src: url("./assets/Bosk.otf");
+}
+
+:root {
+  --highlight-color: rgb(253, 187, 63);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 30vw;
+  background-color: aquamarine;  
+  background-image: url("./assets/woman_in_light.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20vh;
+  padding-bottom: 2vh;
+}
+
+.sidebar .logo {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar .logo img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.sidebar .logo h1 {
+  color: white;
+  font-family: "Bosk", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.sidebar p {
+  color: white;
+  text-align: center;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.main {
+  background-color: rgb(245, 245, 245);
+  height: 100%;
+  width: 70vw;
+}
+
+.main .info {
+  height: 30vh;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-weight: 700;
+}
+
+.main .info em {
+  padding-top: 20px;
+  font-size: 13px;
+  color: rgb(77, 77, 77);
+}
+
+.main form {
+  height: 25vh;
+  background-color: white;
+  box-shadow: 2px 5px 5px rgb(202, 202, 202);
+  padding: 15px 30px;
+}
+
+.main form p {
+  font-weight: 600;
+  color: rgb(43, 43, 43);
+  margin-bottom: 10px;
+}
+
+.main form ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+}
+
+.main form li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 8px 25px;
+  margin-left: 0;
+}
+
+.main form input {
+  width: 200px;
+  height: 25px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 4px;
+  padding-left: 8px;
+}
+
+.main form input:focus {
+  outline: none;
+  border: 1px solid var(--highlight-color);
+  box-shadow: 2px 3px 5px rgb(202, 202, 202);
+}
+
+.main form input.error {
+  outline: none;
+  border: 1px solid rgb(219, 62, 62);
+}
+
+.main form label {
+  font-size: 10px;
+  color:rgb(34, 34, 34);
+  font-weight: 900px;
+}
+
+.footer {
+  padding: 30px 40px;
+}
+
+.footer button {
+  width: 170px;
+  height: 35px;
+  background-color: var(--highlight-color);
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  color: rgb(36, 36, 36);
+  margin-bottom: 30px;
+  box-shadow: 0 3px 4px rgb(202, 202, 202);
+}
+
+.footer a {
+  color: rgb(236, 161, 22);
+  font-weight: 700;
+}
