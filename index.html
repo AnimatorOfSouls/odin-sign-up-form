@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
 </head>
 <body>
   <div class="sidebar">
@@ -19,11 +20,13 @@
   </div>
   <div class="main">
     <p class="info">
-      Want to become one with the sun? Sign up today to gain (literal) enlightenment!
+      Want to become one with the sun? Join us at Light Up!(tm) to experience the joy of having light shining down upon you(r face)<br>
+
+      Sign up today to gain (literal) enlightenment!
       <br>
       <em>Disclaimer: May cause unwanted side effects</em>
     </p>
-    <form action="" id="sign-up">
+    <form id="sign-up">
       <p>Information for the Sun God</p>
       <ul>
         <li>
@@ -45,6 +48,7 @@
         <li>
           <label for="password">PASSWORD</label>
           <input type="text" name="password" id="password" class="error">
+          <span class="password-error">* Passwords do not match</span>
         </li>
         <li>
           <label for="password-c">CONFIRM PASSWORD</label>
@@ -53,7 +57,7 @@
       </ul>
     </form>
     <div class="footer">
-      <button type="submit" form="sign-up">Create Account</button>
+      <button class="submit" onclick="checkPassword()">Join Us</button>
       <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </div>
